@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+/*nav*/  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    z-index: 99;
+  }  
+  .logo {
+    width: 8vh;
+    height: 8vh;
+    cursor: pointer;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }  
+  .nav_links li {
+    list-style: none;
+  }  
+  .nav_links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }  
+  .nav_links a:hover {
+    transition: all 1s ease;
+    color: #0C1248;
+  }  
+  .burger {
+    cursor: pointer;
+    display: none;
+  }  
+  .burger div {
+    transition: all 0.3s ease;
+    width: 25px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 5px;
+  }
+    
+  @media screen and (max-width: 1024px) {
+    .nav_links {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    body, html {
+      overflow-x: hidden;
+    }
+    html {
+      overflow-x: hidden;
+    }
+    .nav_links {
+      position: fixed;
+      background-color: #a6a6a6;
+      color: #f2f2f2;
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    .nav_links li {
+      opacity: 0;
+      color: #f2f2f2;
+    }
+    .burger {
+      display: block;
+    }
+  }
+  
+  .nav-active {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }  
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+/*home page*/
+.home-section {
+  min-height: 100vh;
+  background-image: url('feest.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.home-section:before {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+.home-section .row {
+  min-height: 100vh;
+}
+.home-section .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 15%;
+}
+.home-section .home-content  h1 {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+  
