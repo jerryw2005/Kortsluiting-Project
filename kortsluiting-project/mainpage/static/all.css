@@ -7,6 +7,10 @@
     box-sizing: border-box;
   }
 
+body {
+  overflow-x: hidden;
+}
+
 /*nav*/  
   nav {
     display: flex;
@@ -38,7 +42,7 @@
   }  
   .nav_links a:hover {
     transition: all 1s ease;
-    color: #0C1248;
+    color: #d1c346;
   }  
   .burger {
     cursor: pointer;
@@ -89,12 +93,10 @@
     .burger {
       display: block;
     }
-  }
-  
+  }  
   .nav-active {
     transform: translateX(0%);
-  }
-  
+  }  
   @keyframes navLinkFade {
     from {
       opacity: 0;
@@ -118,7 +120,7 @@
 /*home page*/
 .home-section {
   min-height: 100vh;
-  background-image: url('feest.webp');
+  background-image: url('feest.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -144,10 +146,10 @@
   max-width: 100%;
   text-align: center;
   position: relative;
-  padding-top: 15%;
+  padding-top: 40vh;
 }
 .home-section .home-content  h1 {
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   margin: 0;
   text-transform: uppercase;
@@ -155,4 +157,114 @@
   letter-spacing: 10px;
 }
 
-  
+
+/*about page*/
+.about-section {
+  min-height: 100vh;
+  background-image: url('feest-2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.about-section:before {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+.about-section .row {
+  min-height: 100vh;
+}
+.about-section .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 10vh;
+}
+.about-section .about-content  h1 {
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+.about-section .about-content  h4 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  letter-spacing: 3px;
+  max-width: 100vh;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 7vh;
+  line-height: 1.8;
+}
+
+/*tickets page*/
+.tickets-section {
+  min-height: 100vh;
+  background-image: url('feest-2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.tickets-section:before {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+.tickets-section .row {
+  min-height: 100vh;
+}
+.tickets-section .tickets-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 10vh;
+}
+.tickets-section .tickets-content  h1 {
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 7px;
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tickets-section .tickets-content button {
+  background-color: white;
+  border: none;
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 2px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 75%;
+}
