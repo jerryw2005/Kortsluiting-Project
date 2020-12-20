@@ -11,4 +11,4 @@ def about(request):
     return render(request, 'mainpage/about.html')
 
 def ticket_error(request):
-    return render(request, 'mainpage/ticket_error')
+    return render(request, 'mainpage/ticket_error.html')
