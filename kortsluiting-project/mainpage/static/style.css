@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< Updated upstream:kortsluiting-project/mainpage/static/style.css
 /* nav */
 .content{
   max-width: 600px;
@@ -115,6 +116,40 @@ body {
   }
   .navbar.show .menu-list{
     left: 0%;
+=======
+/*nav*/
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    z-index: 99;
+  }
+  .logo {
+    width: 8vh;
+    height: 8vh;
+    cursor: pointer;
+  }
+  .nav_links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  .nav_links li {
+    list-style: none;
+  }
+  .nav_links a {
+    color: #f2f2f2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .nav_links a:hover {
+    transition: all 1s ease;
+    color: #d1c346;
+>>>>>>> Stashed changes:kortsluiting-project/mainpage/static/all.css
   }
   .navbar .menu-list li{
     margin-top: 45px;
@@ -284,4 +319,37 @@ body {
   font-weight: 900;
   letter-spacing: 2px;
   opacity: 75%;
+}
+
+
+
+/*burger*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
 }
