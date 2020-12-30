@@ -12,28 +12,42 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head></head><body><h1>Geen tickets beschikbaar</h1>
+<form method="get" action="/tickets/">
+    <button type="submit">Terug</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket error test</title>
-    {% load static %}
-    <link rel="icon" type="img/png" href="{% static 'kortsluiting.jpg' %}">
-    <link rel="stylesheet" href="{% static 'all.css' %}">
-</head>
-<body>
+
+    <link rel="icon" type="img/png" href="/static/kortsluiting.jpg">
+    <link rel="stylesheet" href="/static/all.css">
+
+
     <nav>
         <div class="logo">
-          <a href="{% url 'home' %}"><img class="logo" src="{% static '../static/kortsluiting.jpg' %}" alt="Cant load"></a>
+          <a href="/"><img class="logo" src="/static/kortsluiting.jpg" alt="Cant load"></a>
         </div>
         <ul class="nav_links">
-          <li><a href="{% url 'home' %}">Home</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'tickets' %}">Tickets</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/tickets/">Tickets</a></li>
         </ul>
 
 
-        <div class="container" onclick="myFunction(this)" >
+        <div class="container" onclick="myFunction(this)">
           <a href="tickets/">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -53,5 +67,9 @@
           </div>
         </div>
     </section>
+
+    <h1>hoi</h1>
+
+
 </body>
 </html>
