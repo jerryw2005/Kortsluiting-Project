@@ -19,17 +19,17 @@ body {
 }
 
 .logo {
-  width: 40%;
-  height: 40%;
+  width: 10vh;
+  height: 10vh;
 }
 
 .navbar{
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding: 25px 0;
   transition: all 0.3s ease;
   margin-bottom: 50px;
+  background-color: black;
 }
 .navbar.sticky{
   background: white;
@@ -264,7 +264,6 @@ body {
   font-size: 25px;
   color: white;
   margin: 0;
-  text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 7px;
   max-width: 50%;
