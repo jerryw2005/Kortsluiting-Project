@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-<<<<<<< Updated upstream:kortsluiting-project/mainpage/static/style.css
 /* nav */
 .content{
   max-width: 600px;
@@ -116,7 +115,7 @@ body {
   }
   .navbar.show .menu-list{
     left: 0%;
-=======
+  }
 /*nav*/
   nav {
     display: flex;
@@ -149,7 +148,6 @@ body {
   .nav_links a:hover {
     transition: all 1s ease;
     color: #d1c346;
->>>>>>> Stashed changes:kortsluiting-project/mainpage/static/all.css
   }
   .navbar .menu-list li{
     margin-top: 45px;
